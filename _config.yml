@@ -1,0 +1,47 @@
+remote_theme: "mmistakes/minimal-mistakes"
+title: "Theron Tjapkes"
+name: &name "Theron Tjapkes"
+description: "Learn about me"
+
+author:
+  name             : *name # *name is a YAML reference pointing to the &anchor earlier
+  avatar           : 
+  bio              : "Computer Science student at Calvin College, with interests in security and game development"
+  location         : "Grand Rapids, MI"
+  email            :
+  uri              : "https://therontjapkes.me"
+  home             : "https://therontjapkes.me"
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         : 
+  foursquare       :
+  github           : "ther0n"
+  gitlab           :
+  google_plus      :
+  keybase          :
+  instagram        : 
+  lastfm           :
+  linkedin         :
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # https://stackoverflow.com/users/123456/username
+  steam            : 
+  tumblr           :
+  twitter          : 
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+
+include: ["_pages"]
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
