@@ -3,6 +3,9 @@ title: "Theron Tjapkes"
 name: &name "Theron Tjapkes"
 description: ""
 
+plugins:
+  - jekyll-feed
+  
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : 
@@ -55,6 +58,3 @@ defaults:
     values:
       layout: single
       author_profile: true
-
-plugins:
-  - jekyll-feed
