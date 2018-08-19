@@ -55,3 +55,6 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+plugins:
+  - jekyll-feed
