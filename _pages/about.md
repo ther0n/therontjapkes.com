@@ -8,8 +8,6 @@ blah blah blah
 
 ## blah
 blah blah
--blah
--blah
 
 ## more blah
 blah blah

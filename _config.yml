@@ -6,9 +6,9 @@ description: "Learn about me"
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : 
-  bio              : "Computer Science student at Calvin College, with interests in security and game development"
+  bio              : "Computer science student at Calvin College with interests in information security and game development"
   location         : "Grand Rapids, MI"
-  email            :
+  email            : "me@therontjapkes.me"
   uri              : "https://therontjapkes.me"
   home             : "https://therontjapkes.me"
   bitbucket        :
