@@ -1,0 +1,23 @@
+<!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+
+{% if author.jabber %}
+<li>
+  <a href="xmpp:{{ author.jabber }}" itemprop="sameAs">
+    <i class="fas fa-fw fa-comment" aria-hidden="true"></i> Jabber
+  </a>
+</li>
+{% endif %}
+
+{% if author.telegram %}
+<li>
+  <a href="https://t.me/{{ author.telegram }}" itemprop="sameAs">
+    <i class="fab fa-fw fa-telegram" aria-hidden="true"></i> Telegram
+  </a>
+</li>
+{% endif %}

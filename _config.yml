@@ -1,7 +1,7 @@
 remote_theme: "mmistakes/minimal-mistakes"
 title: "Theron Tjapkes"
 name: &name "Theron Tjapkes"
-description: "Learn about me"
+description: ""
 
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
@@ -22,12 +22,14 @@ author:
   google_plus      :
   keybase          :
   instagram        : 
+  jabber           : "aptgetrekt@jabber.org"
   lastfm           :
   linkedin         :
   pinterest        :
   soundcloud       :
   stackoverflow    : # https://stackoverflow.com/users/123456/username
-  steam            : 
+  steam            : "theron1998"
+  telegram         : "ther0n_t"
   tumblr           :
   twitter          : 
   vine             :
@@ -38,9 +40,17 @@ author:
 include: ["_pages"]
 
 defaults:
-  # _pages
+  # _posts
   - scope:
       path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+  # _pages
+  - scope:
+      path: "_pages"
       type: pages
     values:
       layout: single
