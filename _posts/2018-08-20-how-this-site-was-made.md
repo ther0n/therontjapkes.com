@@ -5,7 +5,7 @@ title:  "This Site"
 For my first project here, why not describe how I made this site itself? Using GitHub Pages and Jekyll, it's surprisingly simple to build a website. Essentially all that you need to do to create a site using GitHub Pages is create a repository and fill it with a few markdown files. However, the default themes don't offer much in the way of customization without major additions/modifications to those themes. I decided to search for a more flexible theme to fit my needs when I found [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/). I set up [a site locally](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) with the theme, I quickly found it was a bit more than what I was looking for. I also wasn't sure how I would fix the theme if it were to break in the future due to an update to Jekyll or GitHub Pages and the project was no longer mantained for whatever reason. I decided to look for a theme that looked nice, but was simple enough that I could easily modify it for my needs and fix it if it were to break due to future updates. I found [Jekyll Now](http://www.jekyllnow.com/), a very basic Jekyll theme that looked good and was quite simple. I made a few modifications to the theme to fit my needs:
 
 #### Landing Page
-I wanted the landing page to show the most recent posts, with the most recent post at the top of the list. To accomplish this I modified index.html to look like this:
+I wanted the landing page to show the most recent projects, with the most recent project at the top of the list. To accomplish this I modified index.html to look like this:
 {% highlight html %}
 {% raw %} 
 ---
@@ -47,7 +47,6 @@ which I modified to:
 {% highlight html %}
 {% raw %}
 <nav>
-  <a href="{{ site.baseurl }}/archive">Archive</a>
   <a href="{{ site.baseurl }}/projects">Projects</a>
   <a href="{{ site.baseurl }}/about">About</a>
 </nav>
@@ -65,14 +64,14 @@ permalink: /about/
 {% endhighlight %}
 The above front matter is used for my About page. The `layout:` key is what determines which html file from the folder `_layout` to use to display the content. For example the front matter for this post contains `layout: post` which means it uses `_layout/post.html` to format the page. The `title:` key is pretty self explanitory, it controls what you see at the top of the page. The last key in the example front matter above is the `permalink:` key. This key sets the address for accessing the page. For example if I set `permalink: /asdfghjkl/` then going to `therontjapkes.com/asdfghjkl` would take me to the page containing the equivalent `permalink` value.
 
-#### The Archive Page
-Every other page aside from the landing page (see `index.html` above) and the archive page is a simple markdown file so I won't go into detail about them. The archive page is dynamic in that it will display all posts to this site, sorted by year. To achieve this, I created the file `archive.html` containing:
+#### The Projects Page
+Every other page aside from the landing page (see `index.html` above) and the projects page is a simple markdown file so I won't go into detail about them. The projects page is dynamic in that it will display all project posts to this site, sorted by year. To achieve this, I created the file `projects.html` containing:
 {% highlight html %}
 {% raw %}
 ---
 layout: default
-title: Archive
-permalink: /archive/
+title: Projects
+permalink: /projects/
 ---
 
 <div class="well">
@@ -105,7 +104,5 @@ I didn't want the social links and icons at the bottom of the site. I don't real
 {% endraw %}
 {% endhighlight %}
 This will have the footer include a link to my contact page, and to an RSS feed. It will also generate a copyright notice using the sites title.
-
-I'm happy with how the site turned out with these modifications. I am also using my modified version of the [Jekyll Now](http://www.jekyllnow.com/) theme over on [lastminute.games](https://lastminute.games).
 
 If you wish to host your own site using GitHub Pages and Jekyll, follow the instructions [here](https://pages.github.com/).
