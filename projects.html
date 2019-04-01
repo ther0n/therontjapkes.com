@@ -1,0 +1,24 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<div class="well">
+{%for project in site.projects %}
+    {% unless project.next %}
+        <h1>{{ project.date | date: '%Y' }}</h1>
+        <ul>
+    {% else %}
+        {% capture year %}{{ project.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ project.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+            </ul>
+            <h1>{{ project.date | date: '%Y' }}</h1>
+            <ul>
+        {% endif %}
+    {% endunless %}
+    <li><a href="{{ site.baseurl}}{{ project.url }}">{{ project.date | date: "%b %-d" }} - {{ project.title }}</a></li>
+{% endfor %}
+</ul>
+</div>
