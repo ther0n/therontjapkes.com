@@ -1,0 +1,79 @@
+body {
+    background-color: #a0a0a0;
+}
+
+#mainWindow {
+    background-color: #ddd;
+    width: 640pt;
+    height: 400pt;
+    margin-top: 18pt;
+    margin-left: 18pt;
+    border: solid #ddd 2px;
+}
+
+.titleBar {
+    text-align: center;
+    font-family: arial;
+    font-size: 12pt;
+    background-color: #000000;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0pt;
+    padding: 2pt;
+}
+
+/* the drawing canvas */
+
+#canvas1 {
+    position: absolute;
+    left: 174pt;
+    top: 50pt;
+    background-color: white;
+}
+
+/* control box */
+
+#controls {
+    position: absolute;
+    left: 54px;
+    top: 66px;
+    width: 140px;
+    height: 462px;
+    background-color: white;
+    padding: 6pt;
+    font-family: arial;
+}
+
+#options {
+    margin-top: 12pt;
+}
+
+#actions {
+    margin-top: 12pt;
+}
+
+#enableredraws {
+    margin-top: 12pt;
+}
+
+#doublebuffer {
+    margin-top: 12pt;
+}
+
+#slider1 {
+    position: relative;
+    width: 132px;
+    margin-top: 12pt;
+    left: -4px;
+}
+
+#drawinterval_label {
+    position: relative;
+    font-size: 90%;
+    top: -5pt;
+    text-align: center;
+}
+#redraw_label {
+    margin-top: 12pt;
+    text-align: center;
+}
