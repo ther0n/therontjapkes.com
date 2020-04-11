@@ -23,13 +23,15 @@ sudo make install
 {% endraw %}
 {% endhighlight %}
 
-From there it was a matter of reading the documentation to get the drives mounted automatically on boot. For this you will need the recovery keys which you can export to a flash drive from BitLocker settings on Windows. First, I tested Dislocker by mounting my storage drive. Dislocker mounts the drive as a file which can then be mounted as a loop device. I'd need to create a location for the file, as well as a location to mount the loop device. I chose to mount the file to `/mnt/storage-bitlocker` and the loop device to `/media/storage`. In order to mount the drive, needed to find the device path for the drive, I found this by running `lsblk` and saw that `/dev/sdb1` is the device path for my storage disk. Running the following commands (if running this youself you'll need to replace `/dev/sdb1` with the device you want to mount and `123456-123456-123456-123456-123456-123456-123456-123456` with the BitLocker recovery key) unlocked the drive and mounted a file representing it's filesystem:
+From there it was a matter of reading the documentation to get the drives mounted automatically on boot. For this you will need the recovery keys which you can export to a flash drive from BitLocker settings on Windows. First, I tested Dislocker by mounting my storage drive. Dislocker mounts the drive as a file which can then be mounted as a loop device. I'd need to create a location for the file, as well as a location to mount the loop device. I chose to mount the file to `/mnt/storage-bitlocker` and the loop device to `/media/storage`. In order to mount the drive, needed to find the device path for the drive, I found this by running `lsblk` and saw that `/dev/sdb1` is the device path for my storage disk. Running the following command unlocked the drive and mounted a file representing it's filesystem:
 
 {% highlight bash %}
 {% raw %}
 sudo dislocker /dev/sdb1 -p123456-123456-123456-123456-123456-123456-123456-123456 -- /mnt/storage-bitlocker
 {% endraw %}
 {% endhighlight %}
+
+If running this youself you'll need to replace `/dev/sdb1` with the device you want to mount and `123456-123456-123456-123456-123456-123456-123456-123456` with the BitLocker recovery key.
 
 The next step is to mount the filesystem file as a loop device which I did with the following command:
 
