@@ -26,4 +26,8 @@ My project 4 also made it's respective showcase!
 
 <https://cs.calvin.edu/courses/cs/352/showcase/widget.html>
 
+Check it out here:
+
+<https://therontjapkes.com/projects/CS352/proj4/proj4.html>
+
 ![](../images/proj4.png)
