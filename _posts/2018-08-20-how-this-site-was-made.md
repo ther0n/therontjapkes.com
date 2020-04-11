@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How This Site Was Made"
+title:  "How This Site Is/Was Made"
 ---
 For my first project/post here, why not describe how I made this site itself? Using GitHub Pages and Jekyll, it's surprisingly simple to build a website. Essentially all that you need to do to create a site using GitHub Pages is create a repository and fill it with a few markdown files. However, the default themes don't offer much in the way of customization without major additions/modifications to those themes. I decided to search for a more flexible theme to fit my needs when I found [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/). I set up [a site locally](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) with the theme, I quickly found it was a bit more than what I was looking for. I also wasn't sure how I would fix the theme if it were to break in the future due to an update to Jekyll or GitHub Pages and the project was no longer mantained for whatever reason. I decided to look for a theme that looked nice, but was simple enough that I could easily modify it for my needs and fix it if it were to break due to future updates. I found [Jekyll Now](http://www.jekyllnow.com/), a very basic Jekyll theme that looked good and was quite simple. I made a few modifications to the theme to fit my needs:
 
