@@ -42,10 +42,12 @@ body {
     background-color: white;
     padding: 6pt;
     font-family: arial;
+    font-size: 11pt;
 }
 
 #options {
     margin-top: 12pt;
+
 }
 
 #actions {

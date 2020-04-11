@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <title>Project 4</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <div id="mainWindow">
+    <h3 class="titleBar">Project 4</h3>
+
+    <div id="controls">
+      <div id="sliderdiv">
+        <p id="slidertitle">Tilt</p>
+        <input id="slider1" type="range" min="-90" max="90" value="0" />
+        <p id="slidertitle">Max speed</p>
+        <input id="slider2" type="range" min="1" max="30" value="30" />
+        <button id="resetbutton" type="submit" >Reset</button>
+
+        <canvas id="canvas1" width="720" height="540">
+          <p>Your browser doesn't support the HTML5 canvas element.</p>
+        </canvas>
+      </div>
+
+
+      <!-- javascript, loaded at the end to make the page appear faster -->
+      <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+      <script type="module" src="proj4.js"></script>
+</body>
+
+</html>
