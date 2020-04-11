@@ -1,6 +1,10 @@
+#### Direct Communication
+
 [Email](mailto:me@therontjapkes.com)
 
-#### Links
+[Discord](https://discordapp.com/users/186253234799640577)
+
+#### Profiles
 
 [Github](https://github.com/ther0n/)
 
