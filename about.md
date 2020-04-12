@@ -8,6 +8,4 @@ I am currently studying Computer Science at ~~Calvin College~~ Calvin University
 
 ## Contact me
 
-The best way to contact me is by email or through Discord. I have social media accounts but I rarely check them.
-
 {% include_relative contact-info.md %}
