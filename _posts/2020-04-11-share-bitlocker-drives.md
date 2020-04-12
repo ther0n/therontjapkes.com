@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reading BitLocker Encrypted Drives on Linux"
+title: "Reading BitLocker Encrypted Drives on Linux"
 ---
 
 On my desktop I have 4 drives: two solid state drives and two hard disk drives. Each solid state drive is dedicated to a single OS: one Windows 10 and the other the latest version of Fedora (currently 31). The two hard disk drives are dedicated to storage. The larger of the two is for general storage of music, photos, videos, and any other large files. The smaller drive contains my Steam library and large programs that don't need the speed of an SSD. I wanted to have all 4 drives encrypted because why not. VeraCrypt would work for this, but it isn't included in the Fedora or RPMFusion repos and I figured if I was going to spend the time getting something "unofficial" working it may as well be BitLocker which works seamlessly on the Windows side.
